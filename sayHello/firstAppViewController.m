@@ -17,6 +17,7 @@
 @synthesize yazi;
 
 //This command line just for test to Github new branch activity
+//Second command line to test branch activities
 
 - (IBAction)showAlertMessage:(id)sender {
     

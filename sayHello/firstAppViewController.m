@@ -16,6 +16,8 @@
 @synthesize helloLabel;
 @synthesize yazi;
 
+//This command line just for test to Github new branch activity
+
 - (IBAction)showAlertMessage:(id)sender {
     
     UIAlertView *myMessage = [[UIAlertView alloc]

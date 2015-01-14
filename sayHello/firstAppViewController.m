@@ -17,12 +17,9 @@
 @synthesize yazi;
 
 //This command line just for test to Github new branch activity
-<<<<<<< HEAD
 //Second command line to test branch activities
 
-=======
-//This command line just for test to merge command 
->>>>>>> master
+//This command line just for test to merge command
 - (IBAction)showAlertMessage:(id)sender {
     
     UIAlertView *myMessage = [[UIAlertView alloc]

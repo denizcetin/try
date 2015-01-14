@@ -20,6 +20,8 @@
 //Second command line to test branch activities
 
 //This command line just for test to merge command
+
+//After this change,I'm gonna try to merge branches on website
 - (IBAction)showAlertMessage:(id)sender {
     
     UIAlertView *myMessage = [[UIAlertView alloc]

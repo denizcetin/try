@@ -29,22 +29,6 @@
     [myMessage show];
 }
 
-- (void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-    
-    switch (buttonIndex) {
-        case 0:
-            helloLabel.text = @"OK";
-            break;
-        case 1:
-            helloLabel.text = @"YES";
-            break;
-        case 2:
-            helloLabel.text = @"NO";
-            break;
-        default:
-            break;
-    }
-}
 - (IBAction)helloAction:(id)sender{
     helloLabel.text = yazi.text;
 }
@@ -58,7 +42,8 @@
 {
     [super viewDidLoad];
     self.title = @"Home";
-	UIAlertView *instanceAlert = [[UIAlertView alloc]init];
+	//UIAlertView *instanceAlert = [[UIAlertView alloc]init];
+	
 }
 
 - (IBAction)typing:(id)sender

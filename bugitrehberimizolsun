@@ -1,0 +1,64 @@
+Senin proje sayfana girdim
+https://github.com/miletliyusuf/try
+
+Bu sayfada fork a basarak senin deponun bir kopyasını kendime aldım.
+https://github.com/denizcetin/try
+
+Senden aldığım (forkladığım) bu projeye (kendi sayfamdaki) girip, sağ taraftaki 
+ssh clone url yi kopyaladım
+git@github.com:denizcetin/try.git
+
+Sonra terminalim üzerinden projelerimin olduğu bölüme girip aşağıdaki komutu
+yazarak forkladığım depo'yu kendi local'ime aldım.
+git clone git@github.com:denizcetin/try.git
+
+Sonra local'ime gidip README.md dosyasında değişiklik yaptım (Yorum satırı ekledim)
+
+Şimdi ben bu değişiklikleri yaparkene sen projede bir değişiklik yapmış olabilirsin.
+Eğer yaptıysan (mesela aynı satırı değiştirmişsek) çakışma olabileceğinden, bunları görmek için
+ve belirli aralıklarla senin projede yaptığın değişiklikleri takip etmek ve kendi depoma almak için
+senin deponu uzak depo olarak eklemeliyim ve değişiklik varsa kendime almalıyım. (Pushlamadan önce)
+
+Bunun için senin proje sayfana "https://github.com/miletliyusuf/try" gidip, sağ taraftaki 
+SSH Clone URL'yi kopyaladım. git@github.com:miletliyusuf/try.git
+
+Sonra terminalden
+git remote add yusuf-try git@github.com:miletliyusuf/try.git
+komutunu verdim. Artık senin bu depon benim bilgisayarımda yusuf-try olarak kayıtlı oradan direk 
+ulaşabilirim.
+
+Şimdi senin yaptığın değişiklikleri kendime (local'ime) alıyorum. (Değişiklik varsa)
+git fetch yusuf-try
+git pull yusuf-try master
+Not: Burada pull yerine reabase de kullanabilirdim. git pull --rebase yusuf-try master
+komutunu kullanarak. Farkı, senin yaptığın tüm değişiklikleri daha sonra kullanmak üzere kenara alır, 
+ve bu değişiklikleri benim yerel depomla birleştirir ve benim yaptığım değişiklikleri en üstün taşır. 
+(Çakışma olasılığının daha çok olduğu durumlarda daha bunu kullanmak daha mantıklı) böylece sen ne yapmışsın da
+ben üstüne neyi değiştirmişim daha rahat görebilirim.
+
+
+Değişklikleri aldım şu an en son hali bende de var, çakışma varsa filan düzeltiyorum. 
+
+Şimdi projenin en son hali var bende senin en son değişikliklerini de aldım, kendi değişikliklerimi
+depoma push'layabilirim.
+
+git status
+git diff
+komutlarını sırasıyla vererek değişen dosyaya ve içeriğine bakıp tekrar kontrol ettim
+
+git add README.md
+komutunu vererek yaptığım değişiklikleri çalışma alanına ekledim.
+
+git commit -m "Yorum"
+komutuyla commit mesajını güncelledim.
+
+git push origin master
+komutunu vererek yaptığım değişiklikleri fork ettiğim depo'nun master branch'ına 
+(ki zatenşu an tek branch var.) yani https://github.com/denizcetin/try adresine yolladım.
+Yaptığım değişiklikler şu anda sadece burada.
+
+Bu değişiklikleri senin de almanı sağlamak istiyorum ne de olsa beraber proje geliştiriyoruz ;)
+
+bunun için bu sayfaya gidip https://github.com/denizcetin/try/pulls
+sağ üst köşedeki pull request butonuna tıklamam yeterli.
+

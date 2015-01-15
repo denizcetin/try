@@ -45,7 +45,6 @@
             break;
     }
 }
-
 - (IBAction)helloAction:(id)sender{
     helloLabel.text = yazi.text;
 }
@@ -59,6 +58,7 @@
 {
     [super viewDidLoad];
     self.title = @"Home";
+	UIAlertView *instanceAlert = [[UIAlertView alloc]init];
 }
 
 - (IBAction)typing:(id)sender
